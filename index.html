@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzabot</title>
-  </head>
-  <body>
-    <script src="./pizzabot.js" charset="utf-8"></script>
-    Edit pizzabot.js to complete this assignment.
-  </body>
+    <script defer src="pizzabot.js"></script>
+</head>
+<body>
+    <h1>Order Your Pizza</h1>
+    <form id="pizzaForm">
+        <label for="pizzaType">Choose your pizza type:</label>
+        <select id="pizzaType">
+            <option value="Vegetarian Pizza">Vegetarian Pizza</option>
+            <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+            <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+        </select>
+        <label for="pizzaQuantity">Number of pizzas:</label>
+        <input type="number" id="pizzaQuantity" min="1" required>
+        <button type="submit">Order</button>
+    </form>
+    <p id="orderMessage"></p>
+</body>
 </html>
